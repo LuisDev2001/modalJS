@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Modal JS</title>
+  </head>
+  <body>
+    <div class="grayOut">
+      <div class="conten-modal" id="main-modal">
+        <div class="icon-close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <h2 class="title-modal">Modal title</h2>
+        <p class="message-modal">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+          similique ullam at voluptate quia provident, eveniet aperiam
+          consequuntur necessitatibus perspiciatis nesciunt sunt non nulla
+          assumenda temporibus in? Voluptate, dolorem dignissimos.
+        </p>
+        <div class="btns-modal">
+          <button class="btn secondary cancel">Cancel</button>
+          <button class="btn primary accept">Accept</button>
+        </div>
+      </div>
+
+      <div class="conten-modal" id="succes-modal">
+        <div class="icon-close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <h2 class="title-modal">Succes</h2>
+        <p class="message-modal">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, is
+          nesciunt sunt non nulla assumenda temporibus in? Voluptate, dolorem
+          dignissimos.
+
+          <i class="far fa-check-circle"></i>
+        </p>
+      </div>
+      <div class="conten-modal" id="error-modal">
+        <div class="icon-close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <h2 class="title-modal">I´m fraid</h2>
+        <p class="message-modal">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, is
+          nesciunt sunt non nulla assumenda temporibus in? Voluptate, dolorem
+          dignissimos.
+
+          <i class="far fa-frown sad"></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="main-container unactive">
+      <button class="btn primary open">Show Modal</button>
+    </div>
+
+    <!-- my script -->
+    <script src="./js/main.js"></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b7301c403c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
