@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: #302457;
+}
+.main-container {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container.unactive {
+  display: none;
+}
+.grayOut {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.conten-modal {
+  background: #fff;
+  width: auto;
+  height: auto;
+  max-width: 550px;
+  position: relative;
+  transition: 0.3s ease opacity;
+  opacity: 1;
+  transform: scale(1);
+}
+.conten-modal i {
+  font-size: 24px;
+}
+.icon-close-modal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.title-modal,
+.message-modal {
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.message-modal {
+  display: flex;
+  flex-direction: column;
+}
+.message-modal i {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #2bdb51;
+}
+.message-modal i.sad {
+  color: #264cf5;
+}
+.btns-modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 50%;
+  border: 0;
+  padding: 0;
+  background: none;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+}
+
+.btn.primary {
+  background: #00c06d;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #eeeeee;
+}
+
+.conten-modal.close {
+  opacity: 0;
+  max-height: 0;
+  transform: scale(0);
+  overflow: hidden;
+  transition: 0.25s ease opacity;
+}
+#succes-modal,
+#error-modal {
+  display: none;
+}
